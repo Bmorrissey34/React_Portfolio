@@ -36,6 +36,11 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
+.nav-item{
+    padding: .5rem;
+}
+
+
 .Titles {
     z-index: 1;
     position: absolute;
