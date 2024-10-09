@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,700;1,400&display=swap');
+
+* {
+    font-family: "Source Sans Pro", monospace;
+}
+
+body {
+    background: linear-gradient(90deg, rgba(153,153,153,1) 0%, rgba(61,61,61,1) 100%);
+}
+
+
+#homework1,
+#project1,
+#homework2 {
+    
+    margin-top: 2rem;
+    
+}
+
+
+
+
+.navColor {
+    background: linear-gradient(90deg, rgba(153,153,153,1) 0%, rgba(61,61,61,1) 100%);
+}
+
+.Titles {
+    z-index: 1;
+    position:absolute;
+    background: linear-gradient(90deg, rgba(153,153,153,1) 0%, rgba(61,61,61,1) 100%);
+    color: white;
+    margin-top:1rem;
+    margin-left: -1rem;
+    padding: 1rem;    
+}
+
+.borderBar {
+    height: 5rem;
+    background-color: rgb(43, 42, 42);
+}
+ 
+.resume {
+    height: 100vh;
+}
+
+.tab {
+    font-size: 3rem;
+}
