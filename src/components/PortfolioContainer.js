@@ -4,7 +4,6 @@ import NavTabs from './NavTabs';
 import Resume from './pages/Resume';
 import About from './pages/About';
 import Portfolio from './pages/Portfolio';
-import Contact from './pages/Contact';
 import './assets/styles/animations.css'; // Import custom animations
 
 export default function PortfolioContainer() {
@@ -20,9 +19,6 @@ export default function PortfolioContainer() {
     }
     if (currentPage === 'Resume') {
       return <div className={pageClasses}><Resume /></div>;
-    }
-    if (currentPage === 'Contact') {
-      return <div className={pageClasses}><Contact /></div>;
     }
     return <div className={pageClasses}><Resume /></div>;
   };
