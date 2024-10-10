@@ -1,22 +1,36 @@
 import React from 'react';
-import './assets/styles/style.css'; // Ensure this path is correct
+import styles from './NavTabs.module.css';
 
 function NavTabs({ currentPage, handlePageChange }) {
-  const tabs = ['About', 'Portfolio', 'Resume'];
-
   return (
-    <ul className="nav nav-tabs">
-      {tabs.map((tab) => (
-        <li className="nav-item" key={tab}>
-          <a
-            href={'#' + tab.toLowerCase()}
-            onClick={() => handlePageChange(tab)}
-            className={currentPage === tab ? 'nav-link active' : 'nav-link'}
-          >
-            {tab}
-          </a>
-        </li>
-      ))}
+    <ul className={styles.nav}>
+      <li className={styles.navItem}>
+        <a
+          href="#about"
+          onClick={() => handlePageChange('About')}
+          className={currentPage === 'About' ? `${styles.navLink} ${styles.active}` : styles.navLink}
+        >
+          About
+        </a>
+      </li>
+      <li className={styles.navItem}>
+        <a
+          href="#portfolio"
+          onClick={() => handlePageChange('Portfolio')}
+          className={currentPage === 'Portfolio' ? `${styles.navLink} ${styles.active}` : styles.navLink}
+        >
+          Portfolio
+        </a>
+      </li>
+      <li className={styles.navItem}>
+        <a
+          href="#resume"
+          onClick={() => handlePageChange('Resume')}
+          className={currentPage === 'Resume' ? `${styles.navLink} ${styles.active}` : styles.navLink}
+        >
+          Resume
+        </a>
+      </li>
     </ul>
   );
 }

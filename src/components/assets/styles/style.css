@@ -31,6 +31,61 @@ body {
     padding-top: 1rem;
 }
 
+.navColor {
+    background: #444;
+    background: linear-gradient(90deg, #444 0%, #222 100%);
+    padding: 0.5rem 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.nav-item {
+    padding-left: 0.5rem;
+}
+
+.Titles {
+    z-index: 1;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.7);
+    color: #ffffff;
+    padding: 0.8rem 1.2rem;
+    border-radius: 4px;
+    margin-top: 1rem;
+    margin-left: -1rem;
+    font-weight: 700;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.borderBar {
+    height: 4px;
+    background-color: #888;
+    margin-bottom: 2rem;
+}
+
+.resume {
+    height: 100vh;
+    overflow-y: auto;
+    background: #1f1f1f;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.tab {
+    font-size: 2rem;
+    color: #dddddd;
+}
+
+img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.nav-tabs {
+    background: #333;
+    border-radius: 8px;
+    padding: 0.5rem;
+}
+
 .aboutMe {
     display: flex;
     flex-direction: row;
@@ -55,30 +110,6 @@ body {
     margin-top: var(--margin-top);
     padding: 1.5rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.navColor {
-    background: #444;
-    background: linear-gradient(90deg, #444 0%, #222 100%);
-    padding: 0.5rem 1rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-.nav-item {
-    padding-left: 0.5rem;
-}
-
-.Titles {
-    z-index: 1;
-    position: absolute;
-    background: rgba(0, 0, 0, 0.7);
-    color: #ffffff;
-    padding: 0.8rem 1.2rem;
-    border-radius: 4px;
-    margin-top: 1rem;
-    margin-left: -1rem;
-    font-weight: 700;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 @media (max-width: 768px) {
@@ -107,31 +138,6 @@ body {
     .aboutMeText p {
         font-size: 1.5rem;
     }
-}
-
-.borderBar {
-    height: 4px;
-    background-color: #888;
-    margin-bottom: 2rem;
-}
-
-.resume {
-    height: 100vh;
-    overflow-y: auto;
-    background: #1f1f1f;
-    padding: 2rem;
-    border-radius: 8px;
-}
-
-.tab {
-    font-size: 2rem;
-    color: #dddddd;
-}
-
-img {
-    width: 100%;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 .aboutMeContainer {
@@ -184,10 +190,4 @@ img {
     .jumbotron {
         max-width: 100%;
     }
-}
-
-.nav-tabs {
-    background: #333;
-    border-radius: 8px;
-    padding: 0.5rem;
 }

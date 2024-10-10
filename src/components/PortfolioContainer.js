@@ -3,23 +3,23 @@ import NavTabs from './NavTabs';
 import Resume from './pages/Resume';
 import About from './pages/About';
 import Portfolio from './pages/Portfolio';
-import './assets/styles/animations.css'; // Import custom animations
+import './assets/styles/animations.css';
 
 export default function PortfolioContainer() {
   const [currentPage, setCurrentPage] = useState('About');
 
   const renderPage = () => {
     const pageClasses = "fade-in";
-    if (currentPage === 'About') {
-      return <div className={pageClasses}><About /></div>;
+    switch (currentPage) {
+      case 'About':
+        return <div className={pageClasses}><About /></div>;
+      case 'Portfolio':
+        return <div className={pageClasses}><Portfolio /></div>;
+      case 'Resume':
+        return <div className={pageClasses}><Resume /></div>;
+      default:
+        return <div className={pageClasses}><About /></div>;
     }
-    if (currentPage === 'Portfolio') {
-      return <div className={pageClasses}><Portfolio /></div>;
-    }
-    if (currentPage === 'Resume') {
-      return <div className={pageClasses}><Resume /></div>;
-    }
-    return <div className={pageClasses}><Resume /></div>;
   };
 
   return (

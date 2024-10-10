@@ -1,11 +1,14 @@
-import React from 'react';
-import PortfolioContainer from './components/PortfolioContainer';
+import React, { Suspense, lazy } from 'react';
 import './components/assets/styles/style.css';
+
+const PortfolioContainer = lazy(() => import('./components/PortfolioContainer'));
 
 const App = () => {
   return (
     <div className="App">
-      <PortfolioContainer />
+      <Suspense fallback={<div>Loading...</div>}>
+        <PortfolioContainer />
+      </Suspense>
     </div>
   );
 };

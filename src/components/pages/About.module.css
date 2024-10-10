@@ -1,0 +1,52 @@
+.aboutMe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  background-color: #f9f9f9;
+}
+
+.myPic {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.myPic:hover {
+  transform: scale(1.1);
+}
+
+.aboutMeContainer {
+  max-width: 800px;
+  text-align: center;
+}
+
+.aboutMeContainer h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.aboutMeContainer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.aboutMeContainer li {
+  margin-bottom: 0.5rem;
+}
+
+.jumbotron {
+  width: 100%;
+  height: auto;
+  margin-top: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.jumbotron:hover {
+  transform: scale(1.05);
+}
