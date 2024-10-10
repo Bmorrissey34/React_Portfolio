@@ -1,7 +1,10 @@
 {
   "files": {
-    "main.css": "/React_Portfolio/static/css/main.1b29b651.css",
-    "main.js": "/React_Portfolio/static/js/main.108ebec1.js",
+    "main.css": "/React_Portfolio/static/css/main.42c9455b.css",
+    "main.js": "/React_Portfolio/static/js/main.25ed679b.js",
+    "static/css/342.e9f73bed.chunk.css": "/React_Portfolio/static/css/342.e9f73bed.chunk.css",
+    "static/js/342.302d74fc.chunk.js": "/React_Portfolio/static/js/342.302d74fc.chunk.js",
+    "static/js/297.1ec9b962.chunk.js": "/React_Portfolio/static/js/297.1ec9b962.chunk.js",
     "static/media/me.jpg": "/React_Portfolio/static/media/me.cf30da6f59ad190ab1fe.jpg",
     "static/media/Ani-time_Project.PNG": "/React_Portfolio/static/media/Ani-time_Project.66e9cc2ac0cd870f7730.PNG",
     "static/media/Weather-Dashboard.png": "/React_Portfolio/static/media/Weather-Dashboard.5d636e49d9e63f397618.png",
@@ -13,11 +16,14 @@
     "static/media/techNews.PNG": "/React_Portfolio/static/media/techNews.dd90b7f06f594f365156.PNG",
     "static/media/Employee Tracker.PNG": "/React_Portfolio/static/media/Employee Tracker.5df5e3d0e0ba3f00a19a.PNG",
     "index.html": "/React_Portfolio/index.html",
-    "main.1b29b651.css.map": "/React_Portfolio/static/css/main.1b29b651.css.map",
-    "main.108ebec1.js.map": "/React_Portfolio/static/js/main.108ebec1.js.map"
+    "main.42c9455b.css.map": "/React_Portfolio/static/css/main.42c9455b.css.map",
+    "main.25ed679b.js.map": "/React_Portfolio/static/js/main.25ed679b.js.map",
+    "342.e9f73bed.chunk.css.map": "/React_Portfolio/static/css/342.e9f73bed.chunk.css.map",
+    "342.302d74fc.chunk.js.map": "/React_Portfolio/static/js/342.302d74fc.chunk.js.map",
+    "297.1ec9b962.chunk.js.map": "/React_Portfolio/static/js/297.1ec9b962.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1b29b651.css",
-    "static/js/main.108ebec1.js"
+    "static/css/main.42c9455b.css",
+    "static/js/main.25ed679b.js"
   ]
 }
