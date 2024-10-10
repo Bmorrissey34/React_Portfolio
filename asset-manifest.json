@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/React_Portfolio/static/css/main.10e93c34.css",
+    "main.css": "/React_Portfolio/static/css/main.acd438d7.css",
     "main.js": "/React_Portfolio/static/js/main.108ebec1.js",
     "static/media/me.jpg": "/React_Portfolio/static/media/me.cf30da6f59ad190ab1fe.jpg",
     "static/media/Ani-time_Project.PNG": "/React_Portfolio/static/media/Ani-time_Project.66e9cc2ac0cd870f7730.PNG",
@@ -13,11 +13,11 @@
     "static/media/techNews.PNG": "/React_Portfolio/static/media/techNews.dd90b7f06f594f365156.PNG",
     "static/media/Employee Tracker.PNG": "/React_Portfolio/static/media/Employee Tracker.5df5e3d0e0ba3f00a19a.PNG",
     "index.html": "/React_Portfolio/index.html",
-    "main.10e93c34.css.map": "/React_Portfolio/static/css/main.10e93c34.css.map",
+    "main.acd438d7.css.map": "/React_Portfolio/static/css/main.acd438d7.css.map",
     "main.108ebec1.js.map": "/React_Portfolio/static/js/main.108ebec1.js.map"
   },
   "entrypoints": [
-    "static/css/main.10e93c34.css",
+    "static/css/main.acd438d7.css",
     "static/js/main.108ebec1.js"
   ]
 }
