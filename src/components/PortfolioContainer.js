@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import NavTabs from './NavTabs';
 import Resume from './pages/Resume';
@@ -23,11 +22,9 @@ export default function PortfolioContainer() {
     return <div className={pageClasses}><Resume /></div>;
   };
 
-  const handlePageChange = (page) => setCurrentPage(page);
-
   return (
     <div>
-      <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
+      <NavTabs currentPage={currentPage} handlePageChange={setCurrentPage} />
       {renderPage()}
     </div>
   );

@@ -5,7 +5,7 @@ import me from '../assets/images/me.jpg';
 
 export default function About() {
   return (
-    <div>
+    <div className='aboutMe'>
       <img className='myPic' src={me} alt="Me" />
       <div className="aboutMeContainer">
         <h1>A little about myself...</h1>

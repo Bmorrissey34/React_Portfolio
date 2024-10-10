@@ -1,30 +1,58 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
 
+:root {
+    --primary-bg: #2B2B2B;
+    --secondary-bg: #3D3D3D;
+    --primary-color: #ffffff;
+    --font-size: 16px;
+    --line-height: 1.6;
+    --border-radius: 8px;
+    --padding: 1rem;
+    --margin-top: 2rem;
+    --focus-color: #ffcc00;
+}
+
 * {
-    font-family: "Source Sans Pro", sans-serif;
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    background: linear-gradient(90deg, #999 0%, #3D3D3D 100%);
-    color: #ffffff;
-    font-size: 16px;
-    line-height: 1.6;
-    padding: 1rem;
+    background: linear-gradient(90deg, #999 0%, var(--secondary-bg) 100%);
+    color: var(--primary-color);
+    font-size: var(--font-size);
+    line-height: var(--line-height);
+    padding: var(--padding);
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 .container {
     padding-top: 1rem;
 }
 
+.aboutMe {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 1rem; /* Base font size */
+    justify-content: center;
+}
+
+.aboutMeText h2 {
+    font-size: 2rem; /* Scales with the base font size */
+}
+
+.aboutMeText p {
+    font-size: 1.25rem; /* Scales with the base font size */
+}
+
 #homework1,
 #project1,
 #homework2 {
-    background: #2B2B2B;
-    border-radius: 8px;
-    margin-top: 2rem;
+    background: var(--primary-bg);
+    border-radius: var(--border-radius);
+    margin-top: var(--margin-top);
     padding: 1.5rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -36,10 +64,9 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.nav-item{
-    padding-left: .5rem;
+.nav-item {
+    padding-left: 0.5rem;
 }
-
 
 .Titles {
     z-index: 1;
@@ -52,6 +79,34 @@ body {
     margin-left: -1rem;
     font-weight: 700;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .aboutMe {
+        font-size: 0.875rem; /* Adjust font size for smaller screens */
+    }
+
+    .aboutMeText h2 {
+        font-size: 1.5rem;
+    }
+
+    .aboutMeText p {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .aboutMe {
+        font-size: 1.125rem; /* Adjust font size for larger screens */
+    }
+
+    .aboutMeText h2 {
+        font-size: 2.5rem;
+    }
+
+    .aboutMeText p {
+        font-size: 1.5rem;
+    }
 }
 
 .borderBar {
@@ -101,10 +156,10 @@ img {
 
 .myPic {
     float: left;
-    width: 30%;
+    width: 35%;
     margin: 2rem;
     border: 4px solid #ffffff;
-    border-radius: 50%;
+    border-radius: 25%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -121,8 +176,14 @@ img {
     border-radius: 8px;
     border: 4px solid #ffffff;
     width: 100%;
-    max-width: 900px;
+    max-width: 87%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .jumbotron {
+        max-width: 100%;
+    }
 }
 
 .nav-tabs {

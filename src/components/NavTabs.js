@@ -1,5 +1,5 @@
-
 import React from 'react';
+import './assets/styles/style.css'; // Ensure this path is correct
 
 function NavTabs({ currentPage, handlePageChange }) {
   const tabs = ['About', 'Portfolio', 'Resume'];
@@ -11,9 +11,7 @@ function NavTabs({ currentPage, handlePageChange }) {
           <a
             href={'#' + tab.toLowerCase()}
             onClick={() => handlePageChange(tab)}
-            className={
-              currentPage === tab ? 'nav-link active' : 'nav-link'
-            }
+            className={currentPage === tab ? 'nav-link active' : 'nav-link'}
           >
             {tab}
           </a>
