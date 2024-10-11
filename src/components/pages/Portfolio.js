@@ -1,4 +1,3 @@
-
 import React from 'react';
 import '../assets/styles/style.css';
 import employeeTracker from '../assets/images/Employee Tracker.PNG';
