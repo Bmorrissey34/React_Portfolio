@@ -16,11 +16,11 @@ export default function About() {
           <ul>
             <li> First off my name is ... Brendan Morrissey</li>
             <li>🔭 I’m currently working on ... <a href='https://www.linkedin.com/in/brendan-morrissey-663468158/'><FontAwesomeIcon icon={faLinkedin} /> Getting My Degree!</a></li>
-            <li>🌱 I’m currently learning ... Java & AWS</li>
-            <li>💹 Proficient in ... HTML, CSS, Javascript</li>
-            <li>💹 Additional Tools - GraphQL, React, Bootstrap, etc.</li>
+            <li>🌱 I’m currently learning ... Python</li>
+            <li>💹 Proficient in ... HTML, CSS, Javascript, Java</li>
+            <li>💹 Additional Tools - GraphQL, React, Bootstrap, Node.js, Express, Materalize CSS</li>
             <li>💬 Ask me about ... My Cat <FontAwesomeIcon icon={faCat} /></li>
-            <li>📫 How to reach me: <FontAwesomeIcon icon={faEnvelope} /> brendanmorrissey34@gmail.com</li>
+            <li>📫 How to reach me: <FontAwesomeIcon icon={faEnvelope} /> bmorrissey@ggc.edu</li>
             <li>⚡ Fun fact: ... I love to hike and backpack!</li>
             <li>💻 Github URL ... <a href='https://github.com/Bmorrissey34'><FontAwesomeIcon icon={faGithub} /> [[💻]]</a></li>
           </ul>
