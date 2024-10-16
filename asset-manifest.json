@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/React_Portfolio/static/css/main.4fed066a.css",
+    "main.css": "/React_Portfolio/static/css/main.67b6ffbd.css",
     "main.js": "/React_Portfolio/static/js/main.507f0009.js",
     "static/css/342.92e7e287.chunk.css": "/React_Portfolio/static/css/342.92e7e287.chunk.css",
     "static/js/342.27157e58.chunk.js": "/React_Portfolio/static/js/342.27157e58.chunk.js",
@@ -16,14 +16,14 @@
     "static/media/techNews.PNG": "/React_Portfolio/static/media/techNews.dd90b7f06f594f365156.PNG",
     "static/media/Employee Tracker.PNG": "/React_Portfolio/static/media/Employee Tracker.5df5e3d0e0ba3f00a19a.PNG",
     "index.html": "/React_Portfolio/index.html",
-    "main.4fed066a.css.map": "/React_Portfolio/static/css/main.4fed066a.css.map",
+    "main.67b6ffbd.css.map": "/React_Portfolio/static/css/main.67b6ffbd.css.map",
     "main.507f0009.js.map": "/React_Portfolio/static/js/main.507f0009.js.map",
     "342.92e7e287.chunk.css.map": "/React_Portfolio/static/css/342.92e7e287.chunk.css.map",
     "342.27157e58.chunk.js.map": "/React_Portfolio/static/js/342.27157e58.chunk.js.map",
     "297.1ec9b962.chunk.js.map": "/React_Portfolio/static/js/297.1ec9b962.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4fed066a.css",
+    "static/css/main.67b6ffbd.css",
     "static/js/main.507f0009.js"
   ]
 }
