@@ -52,32 +52,29 @@ export default function Portfolio() {
       id: 7,
       title: 'Weather Dashboard',
       image: weatherDashboard,
-      repoLink: 'https://github.com/Bmorrissey34/Weather-Dashboard'
+      repoLink: 'https://github.com/Bmorrissey34/Weather-Dashboard',
+      liveLink: 'https://bmorrissey34.github.io/Weather-Dashboard/'
     }
   ];
 
   return (
-    <div className="container">
-      <div className="row">
-        {projects.map(({ id, title, image, repoLink, liveLink }) => (
-          <div className="col-md-6 col-lg-4 mb-4" key={id}>
-            <div className="project-card">
-              <div className="project-image">
-                <img className="img-fluid" src={image} alt={title} />
-              </div>
-              <div className="project-details">
-                <h3>{title}</h3>
-                <div className="links">
-                  {liveLink && (
-                    <a href={liveLink} className="btn btn-primary">Live Demo</a>
-                  )}
-                  <a href={repoLink} className="btn btn-secondary">GitHub</a>
-                </div>
-              </div>
-            </div>
+    <div className="portfolio">
+      {projects.map(project => (
+        <div key={project.id} className="project">
+          <h3 className="project-title">{project.title}</h3>
+          <img src={project.image} alt={project.title} className="project-image" />
+          <div className="project-links">
+            <a href={project.repoLink} target="_blank" rel="noopener noreferrer">
+              <button className="project-button">Repository</button>
+            </a>
+            {project.liveLink && (
+              <a href={project.liveLink} target="_blank" rel="noopener noreferrer">
+                <button className="project-button">Live Demo</button>
+              </a>
+            )}
           </div>
-        ))}
-      </div>
+        </div>
+      ))}
     </div>
   );
 }
