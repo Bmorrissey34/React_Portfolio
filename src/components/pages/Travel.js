@@ -43,10 +43,8 @@ const TravelPage = () => {
     '"Travel makes one modest. You see what a tiny place you occupy in the world." – Gustave Flaubert',
   ];
 
-  // State to track current quote
   const [currentQuoteIndex, setCurrentQuoteIndex] = useState(0);
 
-  // Handlers for navigating quotes
   const handleNextQuote = () => {
     setCurrentQuoteIndex((prevIndex) => (prevIndex + 1) % quotes.length);
   };

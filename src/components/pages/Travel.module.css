@@ -10,10 +10,10 @@
 /* Parent Container */
 .parentContainer {
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  background-color: white;
+  flex-direction: column;
+  align-items: center;
   padding: 2rem;
+  background-color: white;
   min-height: 100vh;
   box-sizing: border-box;
 }
@@ -21,6 +21,8 @@
 /* Navigation Bar */
 .navAndContent {
   display: flex;
+  width: 100%;
+  max-width: 1200px;
   gap: 2rem;
   flex-wrap: wrap; /* Stack navigation and content on smaller screens */
 }
@@ -33,11 +35,12 @@
 }
 
 .navbar {
-  width: 200px;
-  background-color: #333;
+  width: 250px;
+  background-color: rgba(0, 0, 0, 0.7); /* Black background with 70% opacity */
   padding: 1rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5); /* Add a subtle shadow */
+  border-radius: 8px; /* Rounded corners */
+  margin-right: 2rem; /* Space between nav and content */
 }
 
 .navList {
@@ -49,16 +52,22 @@
   gap: 1rem;
 }
 
+.navItem {
+  margin-bottom: 1rem;
+}
+
 .navItem a {
-  color: white;
+  color: #f1f1f1;
   text-decoration: none;
+  font-size: 1.25rem;
   padding: 0.5rem 1rem;
   display: block;
   border-radius: 4px;
-  transition: background-color 0.3s ease;
+  transition: color 0.3s, background-color 0.3s ease;
 }
 
 .navItem a:hover {
+  color: #818181;
   background-color: #555;
 }
 
@@ -82,6 +91,7 @@
 /* Header Section */
 .header {
   text-align: center;
+  margin-bottom: 2rem;
   padding: 2rem;
   background-color: #f4f4f4;
 }
@@ -99,6 +109,7 @@
 .articlesSection {
   padding: 2rem;
   background-color: #fff;
+  margin-bottom: 2rem;
 }
 
 .articlesSection h2 {
@@ -117,7 +128,7 @@
   flex: 1 1 calc(33.33% - 1rem); /* Default: 3 cards per row */
   max-width: calc(33.33% - 1rem);
   font-size: calc(1.25rem + 0.5vw);
-  background-color: #f9f9f9;
+  background-color: #fff;
   border: 1px solid #e0e0e0;
   border-radius: 8px;
   padding: 1rem;
@@ -133,7 +144,7 @@
 
 .articleCard a {
   text-decoration: none;
-  color: #007bff;
+  color: #333;
   font-size: 1rem;
   font-weight: bold;
 }
@@ -160,6 +171,7 @@
 /* Quotes Section */
 .quotesSection {
   background-color: #f9f9f9;
+  margin-bottom: 2rem;
 }
 
 .quotesSection h2 {
@@ -179,7 +191,7 @@
 
 .quote {
   flex: 1;
-  font-size: clamp(1rem, 4vw, 1.5rem); /* Resizes for Quotes Section */
+  font-size: 1.5rem;
   font-style: italic;
   color: #555;
   text-align: center;
@@ -192,17 +204,19 @@
   justify-content: center;
   align-items: center;
   overflow: hidden; /* Prevent overflow if the text exceeds the box */
+  margin: 0 1rem;
 }
 
 .navButton {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
   background-color: #007bff;
   color: #fff;
-  border: none;
   border-radius: 50%;
   width: 40px;
   height: 40px;
-  font-size: 1.2rem;
-  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -218,6 +232,7 @@
 .gallery {
   padding: 2rem;
   background-color: #fff;
+  margin-bottom: 2rem;
 }
 
 .gallery h2 {
