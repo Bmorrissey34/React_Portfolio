@@ -133,7 +133,7 @@
   flex: 1 1 calc(33.33% - 1rem); /* Default: 3 cards per row */
   max-width: calc(33.33% - 1rem);
   font-size: clamp(1rem, 2.5vw, 1.5rem); /* More scalable font size */
-  background-color: #fff;
+  background-color: #bdbdbd;
   border: 1px solid #e0e0e0;
   border-radius: 8px;
   padding: 1.5rem; /* Added padding for better readability */
