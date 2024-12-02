@@ -1,5 +1,31 @@
 import React, { useState } from "react";
 import styles from "./Travel.module.css";
+import img1 from "../assets/images/IMG_0168.JPEG";
+import img2 from "../assets/images/IMG_0172.JPEG";
+import img3 from "../assets/images/IMG_0177.JPEG";
+import img5 from "../assets/images/IMG_0408.JPEG";
+import img6 from "../assets/images/IMG_0411.JPEG";
+import img7 from "../assets/images/IMG_0414.JPEG";
+import img8 from "../assets/images/IMG_0420.JPEG";
+import img9 from "../assets/images/IMG_0422.JPEG";
+import img10 from "../assets/images/IMG_0439.JPEG";
+import img11 from "../assets/images/IMG_0562.JPEG";
+import img12 from "../assets/images/IMG_1429.JPEG";
+import img13 from "../assets/images/IMG_1433.JPEG";
+import img14 from "../assets/images/IMG_1438.JPEG";
+import img15 from "../assets/images/IMG_2975.JPEG";
+import img16 from "../assets/images/IMG_2978.JPEG";
+import img17 from "../assets/images/IMG_2992.JPEG";
+import img18 from "../assets/images/IMG_2994.JPEG";
+import img19 from "../assets/images/IMG_2999.JPEG";
+import img20 from "../assets/images/IMG_3416.JPEG";
+import img21 from "../assets/images/IMG_3422.JPEG";
+import img22 from "../assets/images/IMG_3426.JPEG";
+import img23 from "../assets/images/IMG_3434.JPEG";
+import img24 from "../assets/images/IMG_3444.JPEG";
+import img25 from "../assets/images/IMG_3451.JPEG";
+import img26 from "../assets/images/IMG_3453.JPEG";
+import img27 from "../assets/images/IMG_3494.JPEG";
 
 const TravelPage = () => {
   const articles = [
@@ -41,6 +67,12 @@ const TravelPage = () => {
     '"Do not follow where the path may lead. Go instead where there is no path and leave a trail." – Ralph Waldo Emerson',
     '"Man cannot discover new oceans unless he has the courage to lose sight of the shore." – André Gide',
     '"Travel makes one modest. You see what a tiny place you occupy in the world." – Gustave Flaubert',
+  ];
+
+  const galleryImages = [
+    img1, img2, img3, img5, img6, img7, img8, img9, img10,
+    img11, img12, img13, img14, img15, img16, img17, img18, img19, img20,
+    img21, img22, img23, img24, img25, img26, img27
   ];
 
   const [currentQuoteIndex, setCurrentQuoteIndex] = useState(0);
@@ -99,7 +131,7 @@ const TravelPage = () => {
             </div>
           </section>
 
-          {/* Quotes Section (Single Quote with Navigation) */}
+          {/* Quotes Section */}
           <section id="quotes" className={styles.quotesSection}>
             <h2>Travel Quotes</h2>
             <div className={styles.quoteWrapper}>
@@ -119,21 +151,14 @@ const TravelPage = () => {
           <section id="gallery" className={styles.gallery}>
             <h2>Travel Gallery</h2>
             <div className={styles.flexContainer}>
-              <img
-                src="./images/travel1.jpg"
-                alt="Scenic Mountain"
-                className={styles.galleryImage}
-              />
-              <img
-                src="./images/travel2.jpg"
-                alt="Beach Sunset"
-                className={styles.galleryImage}
-              />
-              <img
-                src="./images/travel3.jpg"
-                alt="City Lights"
-                className={styles.galleryImage}
-              />
+              {galleryImages.map((image, index) => (
+                <img
+                  key={index}
+                  src={image}
+                  alt={`Travel Image ${index + 1}`}
+                  className={styles.galleryImage}
+                />
+              ))}
             </div>
           </section>
         </div>

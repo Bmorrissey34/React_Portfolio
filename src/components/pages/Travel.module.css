@@ -31,7 +31,6 @@
   .navAndContent {
     justify-content: center;
   }
-  
 }
 
 .navbar {
@@ -41,6 +40,13 @@
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5); /* Add a subtle shadow */
   border-radius: 8px; /* Rounded corners */
   margin-right: 2rem; /* Space between nav and content */
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    width: 90%; /* Full width on smaller screens */
+    margin: 0 auto; /* Center the navbar */
+  }
 }
 
 .navList {
@@ -85,7 +91,6 @@
   .travelPage {
     width: 70%;
   }
-  
 }
 
 /* Header Section */
@@ -127,11 +132,11 @@
 .articleCard {
   flex: 1 1 calc(33.33% - 1rem); /* Default: 3 cards per row */
   max-width: calc(33.33% - 1rem);
-  font-size: calc(1.25rem + 0.5vw);
+  font-size: clamp(1rem, 2.5vw, 1.5rem); /* More scalable font size */
   background-color: #fff;
   border: 1px solid #e0e0e0;
   border-radius: 8px;
-  padding: 1rem;
+  padding: 1.5rem; /* Added padding for better readability */
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -195,16 +200,24 @@
   font-style: italic;
   color: #555;
   text-align: center;
-  padding: 1rem;
+  padding: 1rem 2rem; /* Flexible height */
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  height: 100px; /* Fixed height */
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden; /* Prevent overflow if the text exceeds the box */
   margin: 0 1rem;
+  word-wrap: break-word; /* Handle long words */
+}
+
+@media screen and (max-width: 1000px) {
+  .quote {
+    font-size: 0.75rem;
+    text-align: justify;
+  }
 }
 
 .navButton {
@@ -228,6 +241,10 @@
   background-color: #0056b3;
 }
 
+.navButton:focus {
+  outline: 2px solid #0056b3;
+}
+
 /* Gallery Section */
 .gallery {
   padding: 2rem;
@@ -242,7 +259,7 @@
 
 .flexContainer {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly; /* Adjust alignment */
   gap: 1rem;
   flex-wrap: wrap;
 }
@@ -265,12 +282,4 @@
     width: 100%;
     max-width: 100%;
   }
-}
-
-@media screen and (max-width: 1000px) {
-  .quote{
-    font-size: 0.75rem;
-    height: auto;
-  }
-  
 }
