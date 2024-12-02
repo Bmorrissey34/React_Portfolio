@@ -1,5 +1,13 @@
+.pageWrapper {
+  max-width: 1200px; /* Limit width on larger screens */
+  width: 100%; /* Full width on smaller devices */
+  margin: 0 auto; /* Center the content */
+  padding: 1rem; /* Add some padding */
+  box-sizing: border-box;
+}
 .nav {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   background-color: #333;
   padding: 1rem;
@@ -7,6 +15,8 @@
 
 .navItem {
   list-style: none;
+  flex: 1 1 auto;
+  text-align: center;
 }
 
 .navLink {
@@ -14,10 +24,68 @@
   text-decoration: none;
   padding: 0.5rem 1rem;
   transition: background-color 0.3s ease;
+  display: block;
 }
 
 .navLink:hover,
 .navLink.active {
   background-color: #555;
   border-radius: 5px;
+}
+
+.menuContainer {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+  padding: 0.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 20%;
+  margin-bottom: 0.5rem;
+}
+
+.menuIcon {
+  display: none;
+}
+
+.menuIconContainer {
+  display: none; /* Hide by default */
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    align-items: center;
+    display: none;
+  }
+
+  .nav.show {
+    display: flex;
+  }
+
+  .navItem {
+    width: 100%;
+  }
+
+  .navLink {
+    padding: 1rem;
+  }
+
+  .menuContainer {
+    display: flex;
+  }
+
+  .menuIconContainer {
+    display: flex; /* Show on mobile */
+  }
+  
+  .menuIcon {
+  display: block;
+  font-size: 2rem;
+  color: white;
+}
+
 }

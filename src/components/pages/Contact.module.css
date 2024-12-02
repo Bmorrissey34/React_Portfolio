@@ -1,0 +1,89 @@
+.contactContainer {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgb(0 0 0 / 20%);
+    border: 1px solid #eaeaea;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  
+  .contactHeader {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 1rem;
+  }
+  
+  .contactForm {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .formGroup {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+  
+  .formLabel {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: #444;
+  }
+  
+  .formInput,
+  .formTextarea {
+    width: 100%; /* Fix to make inputs span the full width */
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    color: #555;
+    box-shadow: inset 0 2px 4px rgb(0 0 0 / 5%);
+    transition: all 0.3s ease;
+  }
+  
+  .formInput:focus,
+  .formTextarea:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 6px rgb(0 123 255 / 50%);
+  }
+  
+  .formTextarea {
+    resize: vertical;
+    height: 120px;
+  }
+  
+  .formButton {
+    align-self: center;
+    width: 50%;
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .formButton:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+  }
+  
+  .formButton:active {
+    transform: scale(1.05);
+  }
+  

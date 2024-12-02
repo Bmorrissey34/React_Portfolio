@@ -1,0 +1,261 @@
+/* Wrapper for Entire Page */
+.pageWrapper {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+/* Parent Container */
+.parentContainer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: white;
+  padding: 2rem;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+/* Navigation Bar */
+.navAndContent {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap; /* Stack navigation and content on smaller screens */
+}
+
+@media screen and (max-width: 768px) {
+  .navAndContent {
+    justify-content: center;
+  }
+  
+}
+
+.navbar {
+  width: 200px;
+  background-color: #333;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.navItem a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  display: block;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.navItem a:hover {
+  background-color: #555;
+}
+
+/* Main Content */
+.travelPage {
+  flex: 1;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 768px) {
+  .travelPage {
+    width: 70%;
+  }
+  
+}
+
+/* Header Section */
+.header {
+  text-align: center;
+  padding: 2rem;
+  background-color: #f4f4f4;
+}
+
+.header h1 {
+  font-size: clamp(1.5rem, 5vw, 2.5rem); /* Scales between 1.5rem and 2.5rem */
+}
+
+.header p {
+  font-size: clamp(1rem, 3vw, 1.2rem); /* Scales with viewport */
+  color: #666;
+}
+
+/* Articles Section */
+.articlesSection {
+  padding: 2rem;
+  background-color: #fff;
+}
+
+.articlesSection h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.articleGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.articleCard {
+  flex: 1 1 calc(33.33% - 1rem); /* Default: 3 cards per row */
+  max-width: calc(33.33% - 1rem);
+  font-size: calc(1.25rem + 0.5vw);
+  background-color: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.articleCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.articleCard a {
+  text-decoration: none;
+  color: #007bff;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.articleCard a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Layout for Articles Section */
+@media (max-width: 950px) {
+  .articleCard {
+    flex: 1 1 calc(50% - 1rem); /* 2 cards per row */
+    max-width: calc(50% - 1rem);
+  }
+}
+
+@media (max-width: 740px) {
+  .articleCard {
+    flex: 1 1 100%; /* 1 card per row */
+    max-width: 100%;
+  }
+}
+
+/* Quotes Section */
+.quotesSection {
+  background-color: #f9f9f9;
+}
+
+.quotesSection h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.quoteWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+  max-width: 800px;
+  margin: auto;
+}
+
+.quote {
+  flex: 1;
+  font-size: clamp(1rem, 4vw, 1.5rem); /* Resizes for Quotes Section */
+  font-style: italic;
+  color: #555;
+  text-align: center;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: 100px; /* Fixed height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Prevent overflow if the text exceeds the box */
+}
+
+.navButton {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.navButton:hover {
+  background-color: #0056b3;
+}
+
+/* Gallery Section */
+.gallery {
+  padding: 2rem;
+  background-color: #fff;
+}
+
+.gallery h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.flexContainer {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.galleryImage {
+  width: 100%; /* Adjust gallery images to full width for smaller screens */
+  max-width: 300px; /* Ensure images do not stretch */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.galleryImage:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .galleryImage {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .quote{
+    font-size: 0.75rem;
+    height: auto;
+  }
+  
+}
